@@ -25,6 +25,7 @@ module('Integration | Component | map', function (hooks) {
       .hasAttribute('height', '120');
 
     let { src } = find('.map img') as HTMLImageElement;
+
     let token = encodeURIComponent(ENV.MAPBOX_ACCESS_TOKEN);
 
     assert.ok(
